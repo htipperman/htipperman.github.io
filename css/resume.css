@@ -1,0 +1,8 @@
+.navbar{
+	background-color: #FFFFCC; 
+	background-image: none;
+}
+.active a{
+	background-color: #FFFF99 !important;
+	background-image: none;
+}

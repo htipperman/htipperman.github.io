@@ -1,0 +1,12 @@
+.navbar{
+	background-color: #e2fee2;
+	background-image: none;
+}
+.active a{
+	background-color: #c9fdc9 !important;
+	background-image: none;
+}
+#title{
+	font-size: 40px; 
+}
+

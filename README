@@ -1,0 +1,28 @@
+HOW TO USE 
+
+	Double-click on the main.html file and load in your browser. 
+
+USE OF BOOTSTRAP
+
+	I used Bootstrap to create a nice looking navigation bar that is fixed. I also used the "jumbotron" class in Bootstrap to create the background shape behind the text/content of each "page". Finally, I used Bootstrap to create the responsive columns in the projects page. 
+
+WHAT I LEARNED
+
+	I am new to web dev, and learned how to work with Bootstrap, use custom hex colors, use the !important flag, use padding to move content to below the nav bar, use a favicon, have multiple pages, round image borders, style transparency, use custom fonts, and edit colors. 
+
+CONTENTS
+
+	There are 4 content pages of the site: 
+
+		1. Home, which details some information about me and has a photo of me. 
+
+		2. Projects, which lists 3 projects I have worked on, each with an image and description, in 3 responsive Bootstrap columns. 
+
+		3. Contact, which has an email to link, a link to LinkedIn, and an Instagram badge. 
+
+		4. Resume, which has a download for a pdf of my resume. 
+
+	There is an additional cover page that appears when my name on the navbar is clicked, as I wanted to have a "splash page", which I'd like to make further improvements to as I continue this course. 
+
+CSS FILES
+	The styles.css file has the main styling for all of the pages, while the other css files correspond to the html file that shares their name. 

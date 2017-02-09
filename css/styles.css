@@ -1,0 +1,57 @@
+@font-face{
+	font-family: 'font';
+	src: url('../fonts/PierSans-Regular.otf');
+}
+@font-face{
+	font-family: 'header';
+	src: url('../fonts/MANIFESTO.ttf');
+}
+img{
+	border-radius: 25px;
+}
+.navbar-brand{
+	/*color: #0033CC   !important;*/
+	color: black !important;
+}
+
+#headshot{
+	width: 500px;
+	height: 400px; 
+}
+.col-md-4 > p{
+	font-size: 15px; 
+}
+body{
+	padding-top: 70px; 
+	font-family: 'font', sans-serif; 
+	text-align: center; 
+	background-image: url("../images/lineardecopattern.jpg");
+}
+.jumbotron{
+		background-color: 	#FDE8D7;  
+		border: white 7px;
+		border-style: solid; 
+		opacity: 0.95; 
+}
+h1, h2, h3{
+	font-family: 'header', sans-serif; 
+
+}
+
+h4, h5, h6{
+	font-family: 'font', sans-serif;
+
+}
+a{
+	font-family: 'header', sans-serif; 
+	
+}
+h6 > a {
+	font-family: 'font', sans-serif; 
+}
+p{
+	padding: 15px; 
+}
+p > a {
+	font-family: 'font', sans-serif; 
+}

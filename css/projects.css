@@ -1,0 +1,13 @@
+.navbar{
+	background-color: #FADBD8;
+	background-image: none;
+}
+.active a{
+	background-color: #F5B7B1   !important;
+	background-image: none;
+}
+
+img {
+	width: 120px;
+	height: 120px; 
+}

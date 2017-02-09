@@ -1,0 +1,14 @@
+.navbar{
+	background-color: #BBDEFB;
+	background-image: none;
+}
+.active a{
+	background-color: #90CAF9  !important;
+	background-image: none;
+}
+h6{
+	font-size: 16px; 
+}
+#insta{
+	border-radius: 0px; 
+}
