@@ -85,8 +85,8 @@ body {
 }
 
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+    0%, 60% { opacity: 1; }
+    61%, 100% { opacity: 0; }
 }
 
 .subtitle {
@@ -308,9 +308,10 @@ section {
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
+    .pixel-accent,
+    .skill-tag {
+        animation: none;
+        transition: none;
     }
 }
 
