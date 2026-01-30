@@ -1,120 +1,21 @@
-/** General Styling */
-body {
-    background-color: #0a0a0a;
-    color: #00ffff; /* Light cyan text */
-    font-family: 'Courier New', Courier, monospace;
-    overflow-x: hidden;
-}
-
-/* Neon Colors */
-h1, h2, h3 {
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff; /* Neon effect */
-}
-
-/* Terminal Box Styles */
-.terminal {
-    background-color: #1a1a1a;
-    border: 1px solid #ff00ff;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-}
-
-/* Window Buttons */
-.terminal .window-buttons {
+.container {
     display: flex;
-    justify-content: flex-start;
-}
-.terminal .window-buttons div {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.terminal .window-buttons .close { background: #ff0000; }
-.terminal .window-buttons .minimize { background: #ffff00; }
-.terminal .window-buttons .maximize { background: #00ff00; }
-
-/* ASCII Art Animations */
-.ascii-art {
-    white-space: pre; 
-    animation: flicker 1s infinite alternate;
-}
-@keyframes flicker {
-    0% { opacity: 1; }
-    100% { opacity: 0.5; }
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-/* Glitch Effects */
-.glitch {
-    position: relative;
-    color: #00ffff;
-}
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    color: #ff00ff;
-    animation: glitch 1s infinite;
-}
-@keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 0); }
-    40% { transform: translate(2px, 0); }
-    60% { transform: translate(-2px, 0); }
-    80% { transform: translate(2px, 0); }
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Timeline Layout */
-.timeline {
-    position: relative;
-}
-.timeline .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #ffff00;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-/* Skill Tags */
-.skill {
-    background-color: #1a1a1a;
-    color: #00ffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-/* Scan Line Animation */
-.scanline {
-    background: repeating-linear-gradient(
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0.1) 3px,
-        transparent 3px,
-        transparent 5px
-    );
-    animation: scan 1s infinite linear;
-}
-@keyframes scan {
-    from { background-position: 0; }
-    to { background-position: 100%; }
-}
-
-/* Responsive Design */
-@media only screen and (max-width: 600px) {
-    .terminal {
-        padding: 10px;
-    }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    .ascii-art,
-    .glitch {
-        animation: none;
-    }
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.25);
 }
